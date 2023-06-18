@@ -86,6 +86,15 @@ return packer.startup(function(use)
   -- Status Line
   use {'ojroques/nvim-hardline'}
 
+  -- Copilot
+  use "zbirenbaum/copilot.lua"
+  use {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function ()
+      require("copilot_cmp").setup()
+    end
+  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
