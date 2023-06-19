@@ -82,7 +82,7 @@ return packer.startup(function(use)
   -- Code Owner
   use {
     "SebastienLeonce/nvim-codeowners",
-    run = "npm install"
+    run = "npm install",  
   }
 
   -- Status Line
@@ -97,6 +97,10 @@ return packer.startup(function(use)
       require("copilot_cmp").setup()
     end
   }
+
+  -- Gitsigns
+  use "lewis6991/gitsigns.nvim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
