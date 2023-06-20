@@ -68,12 +68,3 @@ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
--- Telescope --
-keymap('n', '<leader>ff', ":Telescope find_files<cr>", opts)
-keymap('n', '<leader>fg', ":Telescope live_grep<cr>", opts)
-keymap('n', '<leader>fb', ":Telescope buffers<cr>", opts)
-keymap('n', '<leader>fh', ":Telescope help_tags<cr>", opts)
-
--- Nvimtree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
